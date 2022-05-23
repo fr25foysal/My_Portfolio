@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1F2235;
+}
+
+.head{
+    background-color: #1F2235;
+    height: 60px;
+    display: flex;
+    padding:10px 20px 0 20px;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.logo{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo a h2{
+    font-size: 34px;
+    font-weight: 900;
+    color: #FF4A57;
+}
+
+.menuicon{
+    color: white;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.menuicon:hover + .menu{
+    display: block;
+}
+
+.menu{
+    width: 150px;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    display: none;
+}
+
+.menu ul li{
+    list-style: none;
+    background-color: black;
+    padding: 10px 20px 10px 20px ;
+}
+
+
+.menu ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.welcome{
+    margin: 120px 0 20px 0;
+    width: 100%;
+}
+
+.welcome h2{
+    color: #FF4A57;
+    font-size: 28px;
+}
+
+.welcome h1{
+    color: white;
+    font-size: 36px;
+    text-transform: capitalize;
+    margin: 20px 0 20px 0;
+}
+
+.welcome p{
+    color: white;
+    line-height: 20px;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+
+.social{
+    margin: 20px 0 2px 0;
+}
+
+.social i{
+    color: #e4d6d6;
+    font-size: 25px;
+    padding: 0 10px 0 0;
+    transition: .3s;
+}
+
+.social i:hover{
+    color: #FF4A57;
+    transform: scale(1.2);
+}
+
+.text-img{
+    text-align: center;
+    margin: 50px 0 20px 0;
+}
+
+.text-img img{
+    width: 400px ;
+}
+
+.about-img{
+    text-align: center;
+}
+
+.about-img img{
+    width: 450px;
+    padding: 0 75px 0 75px;
+    border: 5px solid #FF4A57;
+}
+
+label{
+    float: left;
+}
+
+.about-text{
+    margin: 50px 0 50px 0;
+    color: white;
+}
+
+.about-text h3{
+    color: white;
+    font-size: 22px;
+}
+
+.about-text p{
+    line-height: 20px;
+    margin: 10px 0 20px 0;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.bio-text label{
+    width: 100px;
+    font-weight: bold;
+}
+
+.button button{
+    padding: 15px 20px 15px 20px;
+    background-color: #FF4A57;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button button:hover{
+    background-color: white;
+    color: #FF4A57;
+}
+
+.service{
+    margin: 50px 0 ;
+}
+
+.serv-head h1{
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+    margin: 60px;
+}
+
+.serv-head h1::after{
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: 40%;
+    width: 70px;
+    height: 1px;
+    border: 1px solid #FF4A57;
+    background-color: #FF4A57;
+}
+
+.color-text{
+    color: #FF4A57;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.ser-box{
+    border: 1px solid white;
+    padding: 20px 0;
+    transition: .5s;
+    margin: 30px 0;
+}
+
+.ser-box-icon{
+    text-align: center;
+    margin: 30px 0;
+    color: #FF4A57;
+}
+
+.ser-box:hover .ser-box-icon i{
+    color: white;
+    background-color: #FF4A57;
+}
+
+.ser-box:hover{
+    transform: translateY(-10px);
+}
+
+.ser-box-icon i{
+    font-size: 28px;
+    border: 1px solid #FF4A57;
+    padding: 6px;
+    transition: .3s;
+}
+
+.ser-box h2{
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.ser-box p{
+    text-align: center;
+    width: 80%;
+    margin: 30px auto;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: white;
+}
+
+.port-button{
+    text-align: center;
+}
+
+#active{
+    background-color: #FF4A57;
+    color: white;
+}
+
+.port-button button{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: 900;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: .3s;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.port-button button:hover{
+    color: #FF4A57;
+}
+
+.port-box{
+    margin: 20px 0;
+}
+
+.port-box img{
+    width: 100%;
+}
+
+.count-box{
+    text-align: center;
+    box-shadow: 0px 0px 20px 1px #8b8b8b;
+    padding: 10px;
+    margin: 50px 0;
+}
+
+.count-box h2{
+    color: white;
+    margin: 10px 0;
+}
+
+.blog-box-img img{
+    width: 100%;
+}
+
+.blog-box-info{
+    box-shadow: 0px 0px 20px 1px #8b8b8b;
+}
+
+.blog-box-info{
+    padding: 20px;
+    color: white;
+}
+
+.blog-box-info h1{
+    color: white;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin: 10px 0;
+    transition: .3s;
+}
+
+.blog-post-time .color-text{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.blog-post-time .color-text i{
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.blog-box-info >p{
+    margin: 10px 0;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.blog-box-info a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    transition: .3s;
+    font-weight: bold;
+}
+
+.blog-box-info a:hover{
+    color: #FF4A57;
+}
+
+.blog-box{
+    margin: 30px 0;
+}
+
+.blog-box:hover .blog-box-info h1{
+    color: #FF4A57;
+}
+
+.input{
+    background-color: #1F2235;
+    border: 1px solid white;
+    padding: 10px;
+    width: 90%;
+    margin: 10px 0;
+}
+
+.contact-button .button{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.copyright{
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.input[type=text]{
+    color: white;
+}
+
